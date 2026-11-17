@@ -623,4 +623,4 @@ Theme persistence uses `localStorage` under the key `vanilla-jsx-theme`. Private
 
 ## License
 
-No license file is included. Add one if you plan to distribute or reuse this project.
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
