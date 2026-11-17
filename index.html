@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A tiny single-page app built with JSX and vanilla JavaScript — no React."
+    />
+    <title>Vanilla JSX — a no-React SPA</title>
+    <script>
+      try {
+        const saved = localStorage.getItem('vanilla-jsx-theme')
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+        document.documentElement.dataset.theme = saved || (prefersDark ? 'dark' : 'light')
+      } catch {}
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
